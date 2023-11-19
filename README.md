@@ -56,7 +56,8 @@ To save file size, by default a .avi file is created. This is because .avi files
 
 Click [here](https://raw.githubusercontent.com/HeronErin/VocalLoco/main/Network%20File%20System.avi) to download an example avi.
 
-Click here to watch the avi.
+Click here to watch the avi:
+
 [<img src="https://i.vimeocdn.com/video/1755931290-41dca2414147a5e200b796367c5a080a544f67fd40b0c50fc9b7dda7c15e1bb1-d" width="50%">](https://player.vimeo.com/video/886055979?h=b45c8aafdb)
 
 
