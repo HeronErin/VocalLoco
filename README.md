@@ -1,49 +1,52 @@
+
 # Vocal Loco
 
-This is some python scripts I wrote for automatically converting PDFS to audiobooks (in the form of videos). There 
-This tool is not user friendly and very clunky. But of you get it to work you are free to use it. 
+These are some Python scripts I wrote for automatically converting PDFs to audiobooks (in the form of videos). This tool is not user-friendly and is very clunky. However, if you manage to get it to work, feel free to use it.
 
 ## Dependencies:
-	- Linux (or wsl)
-	- FFmpeg (installed through apt or pacman)
-	- Tesseract (installed through apt or pacman)
-	- Pytesseract (installed through pip)
-	- Requests (installed through pip)
-	- edge-tts (installed through pip)
-	- PyPDF2 (installed through pip)
-	- pdf2image (installed through pip)
+- Linux (or WSL)
+- FFmpeg (installed through apt or pacman)
+- Tesseract (installed through apt or pacman)
+- Pytesseract (installed through pip)
+- Requests (installed through pip)
+- edge-tts (installed through pip)
+- PyPDF2 (installed through pip)
+- pdf2image (installed through pip)
 
-## How to use:
+## How to Use:
 
-1. Copy your pdf to target/crop.pdf and target/uncrop.pdf
-	- crop.pdf is for the cropped page of where you want to be read
-	- uncrop.pdf is the full page you want to display in the video to be generated
-2. Get the pngs from the pdf:
-```bash
-	python main.py +"Your books title" get-pages
-```
-3. Delete any of your don't want in "books/Your books title" OR "files/"
-4. Extract the text from the PDF, this can be done in two methods:
-	1. Get the text straight from the pdf (meaning you can highlight text in the pdf)
-```bash
-	python main.py +"Your books title" pdf-ext 
-```
-	2. OCR that bitch (this can take a while)
-```bash
-	python main.py +"Your books title" page-ocr
-```
-5. TTS the pages:
-```bash
-	python main.py +"Your books title" tts
-```
-6. Create the video with ffmpeg:
-```bash
-	python main.py +"Your books title" cat # Creates and Concatenates the videos
-```
+1. Copy your PDFs to `target/crop.pdf` and `target/uncrop.pdf`.
+   - `crop.pdf` is for the cropped page of where you want to be read.
+   - `uncrop.pdf` is the full page you want to display in the generated video.
 
-7. Once you have revied the generated video and uploaded it to YouTube, deleate all the temporary files in "books/Your books title" OR "files/"
+2. Get the PNGs from the PDF:
+   ```bash
+   python main.py +"Your book's title" get-pages
+   ```
 
+3. Delete any pages you don't want in `"books/Your book's title"` OR `"files/"`.
 
+4. Extract the text from the PDF, which can be done in two methods:
+   1. Get the text straight from the PDF (meaning you can highlight text in the PDF):
+      ```bash
+      python main.py +"Your book's title" pdf-ext 
+      ```
+   2. OCR that page (this can take a while):
+      ```bash
+      python main.py +"Your book's title" page-ocr
+      ```
+
+5. Convert the pages to TTS (Text-to-Speech):
+   ```bash
+   python main.py +"Your book's title" tts
+   ```
+
+6. Create the video with FFmpeg:
+   ```bash
+   python main.py +"Your book's title" cat # Creates and Concatenates the videos
+   ```
+
+7. Once you have reviewed the generated video and uploaded it to YouTube, delete all the temporary files in `"books/Your book's title"` OR `"files/"`.
 
 ## Disclaimer
 
@@ -58,3 +61,4 @@ This collection of Python scripts is designed for educational purposes only. The
 **Limited Liability:** The author of this tool shall not be held liable for any damages or legal issues resulting from the misuse or improper application of this software.
 
 **License and Warranty Disclaimer:** This work is licensed under the terms of the GPL-3 license. Please review the license terms for more details. This software is distributed without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. See the GPL-3 License for more details.
+
