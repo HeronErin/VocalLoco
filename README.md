@@ -54,7 +54,7 @@ These are some Python scripts I wrote for automatically converting PDFs to audio
 To save file size, by default a .avi file is created. This is because .avi files support missing frames, otherwise .mp4 files balloon in files size. However this creates the sideffect that when you open it in a media player it can seem glitchey and frames don't display right. This disapears when the video is uploaded to youtube, as they transcode it to mp4, so they get the big file size and you don't need to deal with it. 
 
 Avi:
-<video width="630" height="300" src="https://raw.githubusercontent.com/HeronErin/VocalLoco/main/Network File System.avi">Can't load video</video>
+Click [here](https://raw.githubusercontent.com/HeronErin/VocalLoco/main/Network File System.avi) to download an example avi.
 
 
 
