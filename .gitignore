@@ -6,6 +6,7 @@ __pycache__
 *.pdf
 *.txt
 !eng.txt
+!Network File System.avi
 *.png
 oldavis
 cat

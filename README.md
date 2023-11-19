@@ -48,6 +48,22 @@ These are some Python scripts I wrote for automatically converting PDFs to audio
 
 7. Once you have reviewed the generated video and uploaded it to YouTube, delete all the temporary files in `"books/Your book's title"` OR `"files/"`.
 
+
+## What it can do:
+
+To save file size, by default a .avi file is created. This is because .avi files support missing frames, otherwise .mp4 files balloon in files size. However this creates the sideffect that when you open it in a media player it can seem glitchey and frames don't display right. This disapears when the video is uploaded to youtube, as they transcode it to mp4, so they get the big file size and you don't need to deal with it. 
+
+Avi:
+<video width="640" height="360" controls>
+  <source src="Network File System.avi" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
+
 ## Disclaimer
 
 **Educational Use Only**
